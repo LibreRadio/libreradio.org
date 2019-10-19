@@ -4,3 +4,7 @@ Options -Indexes
 # Enable server side includes
 Options +Includes
 AddOutputFilter INCLUDES .html .shtml
+
+# Error documents
+ErrorDocument 403 /assets/error_docs/403.html
+ErrorDocument 404 /assets/error_docs/404.html
