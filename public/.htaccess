@@ -1,0 +1,6 @@
+# Disable automatic indices
+Options -Indexes
+
+# Enable server side includes
+Options +Includes
+AddOutputFilter INCLUDES .html .shtml
