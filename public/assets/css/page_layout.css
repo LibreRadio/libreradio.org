@@ -1,0 +1,54 @@
+/*
+ * Color scheme:
+ * gray:  #555555
+ * green: #449900
+ * blue:  #0088cc
+ */
+
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0 auto; /* vertical horizontal */
+	padding: 0;
+	width: 85%;
+}
+body>main {
+	margin: 0 auto; /* vertical horizontal */
+	padding: 0;
+	width: 90%;
+}
+@media screen and (max-width: 1024px){
+	body {
+		margin: 0 6px; /* vertical horizontal */
+		width: auto;
+	}
+	body>main {width: 100%;}
+}
+
+body>header {border-bottom: 1px solid #449900;}
+body>header a {
+	margin: 0 0 0 16px; /* top right bottom left */
+	padding: 0;
+	text-decoration: none;
+}
+body>header h1 {
+	color: #0088cc;
+	font-size: 36pt;
+	margin: 6px 0 -30px 0; /* top right bottom left */
+}
+body>header nav {
+	text-align: right;
+	font-size: 16pt;
+}
+@media screen and (max-width: 1080px){
+	body>header a {margin: 0 16px 0 0; /* top right bottom left */}
+	body>header h1 {margin: 6px 0 0 0; /* top right bottom left */}
+	body>header nav {text-align: left;}
+}
+
+body>footer {
+	border-top: 1px solid #449900;
+	clear: both;
+}

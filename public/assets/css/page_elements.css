@@ -1,0 +1,53 @@
+/*
+ * Color scheme:
+ * gray:  #555555
+ * green: #449900
+ * blue:  #0088cc
+ */
+
+figure {
+	clear: both;
+	margin: 14px 0; /* vertical horizontal */
+	width: 100%;
+}
+figcaption {
+	border-top: 1px dashed #0088cc;
+	color: #555555;
+	font-family: sans-serif;
+	font-size: 10pt;
+}
+figure.right {
+	border-left: 2px solid #0088cc;
+	float: right;
+	margin-left: 4px;
+	padding-left: 3px;
+	width: 50%;
+}
+@media screen and (max-width: 860px){
+	figure.right {
+		border-left: none;
+		float: none;
+		margin: 14px 0;
+		padding: 0;
+		width: auto;
+	}
+}
+img {max-width: 100%;}
+
+.twocolumns, .threecolumns {
+	margin: 18px 12px 0 12px; /* top right bottom left */
+	clear: both;
+}
+.columnruler {column-rule: 1px solid #449900;}
+.twocolumns {column-count: 2;}
+.threecolumns {column-count: 3;}
+@media screen and (max-width: 680px){.threecolumns {column-count: 2;}} /* Collapse columns on tablet */
+@media screen and (max-width: 520px){.twocolumns, .threecolumns {column-count: 1;}} /* Collapse columns on mobile */
+
+.twocolumns div, .threecolumns div, .twocolumns li, .threecolumns li {break-inside: avoid-column;}
+.twocolumns h1, .twocolumns h2, .twocolumns h3, .twocolumns h4,
+.threecolumns h1, .threecolumns h2, .threecolumns h3, .threecolumns h4 {
+	text-align: center;
+	margin-top: 0;
+}
+.twocolumns h5, .twocolumns h6, .twocolumns p, .threecolumns h5, .threecolumns h6, .threecolumns p {margin-top: 0;}
