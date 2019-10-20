@@ -1,2 +1,6 @@
 <footer>
+	<div class="twocolumns">
+		<p><a href="/contact/">Contact us</a><br/><a href="https://github.com/LibreRadio/">GitHub</a></p>
+		<p>Do you like our website? If not, you can <a href="https://github.com/LibreRadio/website/blob/master/public<!--#echo var="SCRIPT_NAME" -->">improve this page</a>.</p>
+	</div>
 </footer>
