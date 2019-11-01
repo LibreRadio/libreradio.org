@@ -2,6 +2,7 @@
 	<a href="/"><h1>LibreRadio software suite</h1></a>
 	<nav>
 		<a href="/">Home</a>
+		<a href="/documentation/">Documentation</a>
 		<a href="/contact/">Contact</a>
 	</nav>
 </header>
