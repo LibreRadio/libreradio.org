@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--#include virtual="/assets/html_head.shtml" -->
+		<title>Music database documentation | LibreRadio</title>
+		<meta name="description" content=""/>
+	</head>
+	<body>
+		<!--#include virtual="/assets/header.shtml" -->
+		<main>
+			<h1>Music database documentation</h1>
+			<h2>album</h2>
+			<table>
+				<tr><th>id</th><th>title</th><th>year</th><th>mb_id</th></tr>
+				<tr id="album_0"><td>0</td><td>The Works</td><td>1984</td><td><a href="https://musicbrainz.org/release/90cf6c44-f082-4da6-9164-6dcad7bb2f86">90cf6c44-f082-4da6-9164-6dcad7bb2f86</a></td></tr>
+			</table>
+
+			<h2>artist</h2>
+			<table>
+				<tr><th>id</th><th>name</th><th>mb_id</th></tr>
+				<tr id="artist_0"><td>0</td><td>Queen</td><td><a href="https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3">0383dadf-2a4e-4d10-a46a-e9e041da8eb3</a></td></tr>
+			</table>
+
+			<h2>song</h2>
+			<table>
+				<tr><th>id</th><th>title</th><th>album_fk</th></tr>
+				<tr id="song_0"><td>0</td><td>Radio Ga Ga</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+				<tr id="song_1"><td>1</td><td>Tear It Up</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+				<tr id="song_2"><td>2</td><td>It's a Hard Life</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+				<tr id="song_3"><td>3</td><td>Man on the Prowl</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+				<tr id="song_4"><td>4</td><td>Machines (or 'Back to Humans')</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+				<tr id="song_5"><td>5</td><td>I Want to Break Free</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+				<tr id="song_6"><td>6</td><td>Keep Passing the Open Windows</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+				<tr id="song_7"><td>7</td><td>Hammer to Fall</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+				<tr id="song_8"><td>8</td><td>Is This the World We Created...?</td><td><a href="#album_0" title="The Works">0</a></td></tr>
+			</table>
+
+			<h2>song_artist</h2>
+			<table>
+				<tr><th>id</th><th>song_fk</th><th>artist_fk</th></tr>
+				<tr id="song_artist_0"><td>0</td><td><a href="#song_0" title="Radio Ga Ga">0</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+				<tr id="song_artist_1"><td>1</td><td><a href="#song_1" title="Tear It Up">1</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+				<tr id="song_artist_2"><td>2</td><td><a href="#song_2" title="It's a Hard Life">2</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+				<tr id="song_artist_3"><td>3</td><td><a href="#song_3" title="Man on the Prowl">3</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+				<tr id="song_artist_4"><td>4</td><td><a href="#song_4" title="Machines (or 'Back to Humans')">4</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+				<tr id="song_artist_5"><td>5</td><td><a href="#song_5" title="I Want to Break Free">5</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+				<tr id="song_artist_6"><td>6</td><td><a href="#song_6" title="Keep Passing the Open Windows">6</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+				<tr id="song_artist_7"><td>7</td><td><a href="#song_7" title="Hammer to Fall">7</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+				<tr id="song_artist_8"><td>8</td><td><a href="#song_8" title="Is This the World We Created...?">8</a></td><td><a href="#artist_0" title="Queen">0</a></td></tr>
+			</table>
+		</main>
+		<!--#include virtual="/assets/footer.shtml" -->
+	</body>
+</html>
