@@ -5,6 +5,10 @@
  * blue:  #0088cc
  */
 
+
+/*************************************/
+/*     IMAGES                        */
+/*************************************/
 figure {
 	clear: both;
 	margin: 14px 0; /* vertical horizontal */
@@ -34,6 +38,10 @@ figure.right {
 }
 img {max-width: 100%;}
 
+
+/*************************************/
+/*     MULTICOLUMN DIVS              */
+/*************************************/
 .twocolumns, .threecolumns {
 	margin: 18px 12px 0 12px; /* top right bottom left */
 	clear: both;
@@ -51,3 +59,36 @@ img {max-width: 100%;}
 	margin-top: 0;
 }
 .twocolumns h5, .twocolumns h6, .twocolumns p, .threecolumns h5, .threecolumns h6, .threecolumns p {margin-top: 0;}
+
+
+/*************************************/
+/*     TABLES                        */
+/*************************************/
+table {
+	color: #000000;
+	border: 1px solid #0088cc;
+	border-collapse: collapse;
+	font-family: sans-serif;
+	font-size: 10pt;
+	margin: 2px 0 18px 0; /* top right bottom left */
+	text-align: left;
+	width: 100%;
+}
+th {border-bottom: 1px solid #0088cc;}
+
+
+/*************************************/
+/*     LISTS                         */
+/*************************************/
+ol, ul {padding: 0 0 12px 18px; /* top right bottom left */}
+
+.chaptercount ol, ol.chaptercount {
+  counter-reset: item
+}
+.chaptercount ol>li, ol.chaptercount>li {
+  display: block
+}
+.chaptercount ol>li:before, ol.chaptercount>li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
+}
