@@ -1,0 +1,21 @@
+{
+	"title": "Get album by id",
+	"response-before": "GET request to <code>/album/101/</code>.",
+	"response-after": "",
+	"response-data": {
+		"id": 101,
+		"title": "The Works of John Doe",
+		"mb-id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+		"year": 2014,
+		"songs": [
+			{
+				"id": 102,
+				"title": "Opus 42"
+			},
+			{
+				"id": 103,
+				"title": "Symphony #5 in B flat"
+			}
+		]
+	}
+}

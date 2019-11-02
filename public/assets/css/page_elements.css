@@ -98,8 +98,10 @@ ol, ul {padding: 0 0 12px 18px; /* top right bottom left */}
 /*     CODE EXAMPLES                 */
 /*************************************/
 code {
+	background-color: #e5f3f9;
 	border: 1px solid #0088cc;
 	font-family: monospace;
+	padding: 0 2px; /* vertical horizontal */
 }
 code.preformatted {
 	display: block;

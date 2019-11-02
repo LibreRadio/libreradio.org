@@ -1,0 +1,20 @@
+{
+	"title": "Get artist by id",
+	"response-before": "GET request to <code>/artist/100/</code>.",
+	"response-after": "",
+	"response-data": {
+		"id": 100,
+		"name": "John Doe",
+		"mb-id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+		"songs": [
+			{
+				"id": 102,
+				"title": "Opus 42"
+			},
+			{
+				"id": 103,
+				"title": "Symphony #5 in B flat"
+			}
+		]
+	}
+}

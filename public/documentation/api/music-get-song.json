@@ -1,0 +1,17 @@
+{
+	"title": "Get song by id",
+	"response-before": "GET request to <code>/song/102/</code>.",
+	"response-after": "",
+	"response-data": {
+		"id": 102,
+		"title": "Opus 42",
+		"album": {
+			"id": 101,
+			"title": "The Works of John Doe"
+		},
+		"artist": {
+			"id": 100,
+			"name": "John Doe"
+		}
+	}
+}
