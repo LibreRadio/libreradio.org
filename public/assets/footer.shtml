@@ -3,5 +3,5 @@
 		<p><a href="/contact/">Contact us</a><br/><a href="https://github.com/LibreRadio/">GitHub</a></p>
 		<p>Do you like our website? If not, you can <a href="https://github.com/LibreRadio/website/blob/master/public<!--#echo var="SCRIPT_NAME" -->">improve this page</a>.</p>
 	</div>
-	<p style="text-align: center;">&copy; Copyright 2019 the LibreRadio contributers, published under the <a href="https://github.com/LibreRadio/website/blob/master/LICENSE">GNU Affero General Public License v3.0</a>.</p>
+	<p style="text-align: center;">&copy; Copyright 2019 the Libre Radio contributers, published under the <a href="https://github.com/LibreRadio/website/blob/master/LICENSE">GNU Affero General Public License v3.0</a>.</p>
 </footer>
