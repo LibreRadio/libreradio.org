@@ -83,12 +83,27 @@ th {border-bottom: 1px solid #0088cc;}
 ol, ul {padding: 0 0 12px 18px; /* top right bottom left */}
 
 .chaptercount ol, ol.chaptercount {
-  counter-reset: item
+  counter-reset: item;
 }
 .chaptercount ol>li, ol.chaptercount>li {
-  display: block
+  display: block;
 }
 .chaptercount ol>li:before, ol.chaptercount>li:before {
   content: counters(item, ".") " ";
-  counter-increment: item
+  counter-increment: item;
+}
+
+
+/*************************************/
+/*     CODE EXAMPLES                 */
+/*************************************/
+code {
+	border: 1px solid #0088cc;
+	font-family: monospace;
+}
+code.preformatted {
+	display: block;
+	margin: 14px 0; /* vertical horizontal */
+	padding: 2px;
+	white-space: pre;
 }
