@@ -1,6 +1,6 @@
-http://libreradio.org/
-http://libreradio.org/contact/
-http://libreradio.org/documentation/
-http://libreradio.org/documentation/api/music.html
-http://libreradio.org/documentation/databases/music.html
-http://libreradio.org/documentation/meta/philosophy.html
+https://libreradio.org/
+https://libreradio.org/contact/
+https://libreradio.org/documentation/
+https://libreradio.org/documentation/api/music.html
+https://libreradio.org/documentation/databases/music.html
+https://libreradio.org/documentation/meta/philosophy.html

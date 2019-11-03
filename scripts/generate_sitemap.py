@@ -19,7 +19,7 @@ for file in exclude:
 	exclude_list.append(os.path.abspath(os.path.join(directory_path, file[1:])))
 
 sitemap = ""
-url_root = "http://libreradio.org/"
+url_root = "https://libreradio.org/"
 for file in files:
 	if file.endswith((".html", ".php", "pdf")):
 		if file in exclude_list:
