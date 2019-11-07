@@ -19,11 +19,12 @@ for directory_name, subdirectory_list, file_list in os.walk(directory_path):
 pages = []
 url_root = "https://libreradio.org/"
 for file in files:
+    file = file.replace("\\", "/")
     if file.endswith((".html", ".php", "pdf")):
         if file.endswith("index.html"):
-            pages.append(file[root_lengt:-10].replace("\\", "/"))
+            pages.append(file[root_lengt:-10])
         else:
-            pages.append(file[root_lengt:].replace("\\", "/"))
+            pages.append(file[root_lengt:])
 
 file = open(os.path.join(directory_path, "sitemap.txt"), "w")
 for page in pages:
