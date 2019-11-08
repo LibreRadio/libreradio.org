@@ -3,4 +3,7 @@ https://libreradio.org/contact/
 https://libreradio.org/documentation/
 https://libreradio.org/documentation/api/music.html
 https://libreradio.org/documentation/databases/music.html
+https://libreradio.org/documentation/meta/languages.html
 https://libreradio.org/documentation/meta/philosophy.html
+https://libreradio.org/documentation/project/database/
+https://libreradio.org/documentation/project/database/install.html
