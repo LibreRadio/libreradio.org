@@ -1,8 +1,8 @@
 {
 	"title": "Get song by id",
-	"response-before": "GET request to <code>/song/102/</code>.",
-	"response-after": "",
-	"response-data": {
+	"textBefore": "GET request to <code>/song/102/</code>.",
+	"textAfter": "",
+	"responseData": {
 		"id": 102,
 		"title": "Opus 42",
 		"album": {

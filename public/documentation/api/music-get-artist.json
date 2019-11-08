@@ -1,8 +1,8 @@
 {
 	"title": "Get artist by id",
-	"response-before": "GET request to <code>/artist/100/</code>.",
-	"response-after": "",
-	"response-data": {
+	"textBefore": "GET request to <code>/artist/100/</code>.",
+	"textAfter": "",
+	"responseData": {
 		"id": 100,
 		"name": "John Doe",
 		"mb-id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",

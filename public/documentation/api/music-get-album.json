@@ -1,8 +1,8 @@
 {
 	"title": "Get album by id",
-	"response-before": "GET request to <code>/album/101/</code>.",
-	"response-after": "",
-	"response-data": {
+	"textBefore": "GET request to <code>/album/101/</code>.",
+	"textAfter": "",
+	"responseData": {
 		"id": 101,
 		"title": "The Works of John Doe",
 		"mb-id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",

@@ -1,24 +1,26 @@
-var data_file;
-location.search.substr(1).split("&").forEach(function(key_val) {
-var temporary_array = key_val.split("=");
-  if (temporary_array[0] === "data") {
-    data_file = decodeURIComponent(temporary_array[1]);
+var dataFile;
+location.search.substr(1).split('&').forEach(function (keyVal) {
+  var temporaryArray = keyVal.split('=');
+  if (temporaryArray[0] === 'data') {
+    dataFile = decodeURIComponent(temporaryArray[1]);
   }
 });
 
 var xmlHttp = new XMLHttpRequest();
-xmlHttp.onreadystatechange = function() {
+xmlHttp.onreadystatechange = function () {
   if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
-    output_data(xmlHttp.responseText);
+    outputData(xmlHttp.responseText);
   }
-}
-xmlHttp.open("GET", "/documentation/api/"+data_file, true);
+};
+
+xmlHttp.open('GET', '/documentation/api/' + dataFile, true);
 xmlHttp.send(null);
 
-function output_data(responseText) {
-  var json_data = JSON.parse(responseText);
-  document.getElementById("response-title").innerHTML = json_data["title"];
-  document.getElementById("response-before").innerHTML = json_data["response-before"];
-  document.getElementById("response-after").innerHTML = json_data["response-after"];
-  document.getElementById("response-data").innerHTML = JSON.stringify(json_data["response-data"], null, 2);
+function outputData(responseText) {
+  var jsonData = JSON.parse(responseText);
+  document.getElementById('response-title').innerHTML = jsonData.title;
+  document.getElementById('response-before').innerHTML = jsonData.textBefore;
+  document.getElementById('response-after').innerHTML = jsonData.textAfter;
+  document.getElementById('response-data').innerHTML = JSON.stringify(
+    jsonData.responseData, null, 2);
 }
