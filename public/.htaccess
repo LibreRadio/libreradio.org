@@ -8,3 +8,9 @@ AddOutputFilter INCLUDES .html .shtml
 # Error documents
 ErrorDocument 403 /assets/error_docs/403.html
 ErrorDocument 404 /assets/error_docs/404.html
+
+# Redirect project landing pages from short and simple addresses
+Redirect 301 /p/database/ /documentation/project/database/
+#Redirect 301 /p/player/ /documentation/project/player/
+#Redirect 301 /p/scheduler/ /documentation/project/scheduler/
+#Redirect 301 /p/server/ /documentation/project/server/
