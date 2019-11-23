@@ -21,13 +21,31 @@
 			<h3>Variables</h3>
 
 			<h2 id="developers-checklist">Developer's checklist</h2>
+			<h3>New domain</h3>
+			<p>This is what you will have to do when you add a source file containing translations:</p>
+			<ol>
+				<li>Add the correct domain parameter to the source file, like <code>_ = i18n.i18n("domain_name", settings.get_language())._</code> for Python.</li>
+				<li>Add the new file and its domain to the script handling string extraction, and run it. Make sure the script created a new POT file contiaining your strings.</li>
+				<li>Log in to Tansifex, navigate to the correct project and click on “Resources”.</li>
+				<li>Click on “Add resources” in the top right corner, select your newly created POT file. The resource should have the same name as the POT file, but without the file extension.</li>
+				<li>Now, add the domain to the scripts responsible for fetchling the strings from Transifex and processing them to be readable by the code.</li>
+				<li>Run both those scripts and make sure the output files end up in the correct directories and look as you would expect.</li>
+			</ol>
+
+			<h3>New file</h3>
+			<p>This is what you will have to do when you add a source file containing translations:</p>
+			<ol>
+				<li>Add the code responsible for fetching the internationalized strings from the desired domain and in the right locale. If you are adding this file to a brand new domain, please follow the guide above instead.</li>
+				<li>Add the new file to the right domain in the script handling string extraction, and run it. Make sure your strings were added to the POT file.</li>
+			</ol>
+
 			<h3>New language</h3>
 			<p>This is what you will have to do when someone requests a new language on Transifex:</p>
 			<ol>
-				<li>Add the language to the correct project</li>
-				<li>Accept the user's request to join the team</li>
-				<li>Add the new language code to the script that fetch translations from Transifex</li>
-				<li>Add the new language code to the scripts that processes the strings into a format readable by the code</li>
+				<li>Add the language to the correct project.</li>
+				<li>Accept the user's request to join the team.</li>
+				<li>Add the new language code to the script that fetch translations from Transifex.</li>
+				<li>Add the new language code to the scripts that processes the strings into a format readable by the code.</li>
 			</ol>
 		</main>
 		<!--#include virtual="/assets/footer.shtml" -->
