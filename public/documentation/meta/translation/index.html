@@ -19,6 +19,8 @@
 
 			<h2 id="translation-guidelines">Translation guidelines</h2>
 			<h3>Variables</h3>
+			<p>Variables inside translatable strings will be a descriptor inside curly brackets, like <code>Please enter a number between {min} and {max}.</code>. The text inside the brackets should never be translated as they will be replaced by something produced by the program.</p>
+			<p>The variables can be moved around freely inside the string to fit you language's word order.</p>
 
 			<h2 id="developers-checklist">Developer's checklist</h2>
 			<h3>New domain</h3>
@@ -33,10 +35,11 @@
 			</ol>
 
 			<h3>New file</h3>
-			<p>This is what you will have to do when you add a source file containing translations:</p>
+			<p>This is what you will have to do when you add a source file containing translatable strings:</p>
 			<ol>
 				<li>Add the code responsible for fetching the internationalized strings from the desired domain and in the right locale. If you are adding this file to a brand new domain, please follow the guide above instead.</li>
 				<li>Add the new file to the right domain in the script handling string extraction, and run it. Make sure your strings were added to the POT file.</li>
+				<li>If you have the required permissions, you can update the resource on Transifex to include your new strings.</li>
 			</ol>
 
 			<h3>New language</h3>
