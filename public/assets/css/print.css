@@ -1,0 +1,17 @@
+/*
+ * This stylesheet overrides the others for printers.
+ *
+ * Color scheme:
+ * gray:  #555555
+ * green: #449900
+ * blue:  #0088cc
+ */
+
+body {
+	padding: 0;
+	width: 100%;
+}
+body>main {width: 100%;}
+body>header h1 {margin: 6px 0 0 0; /* top right bottom left */}
+body>header nav {display: none;}
+body>footer>div.twocolumns {display: none;}
